@@ -1,0 +1,107 @@
+.hire-me {
+    padding: 50px 0;
+
+    .container {
+
+
+        p {
+            margin-top: 30px;
+            font-size: 14px;
+            font-family: $mainFontFamily;
+            color: $textColor_main;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+        }
+
+        span {
+            color: $themeColor;
+            font-size: 14px;
+            font-family: $mainFontFamily;
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+
+
+            .row {
+
+                margin-top: 15px;
+                width: 100%;
+                border: 1px solid $formBorderColor;
+                border-radius: 4px;
+                padding: 7px;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+                input {
+                    width: 100%;
+                    border: none;
+                    font-size: 14px;
+                    font-family: $mainFontFamily;
+                    color: $formBorderColor;
+
+                    &::placeholder {
+                        color: #555;
+                        opacity: .8;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+
+                textarea {
+                    width: 100%;
+                    border: none;
+                    min-height: 100px;
+                    resize: vertical;
+                    font-size: 14px;
+                    color: #555;
+                    opacity: .8;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+
+                &.btn {
+                    padding: 0;
+                    border: none;
+
+                    button {
+                        width: 100%;
+                        padding: 7px;
+                        border: 1px solid $themeColor;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: $mainFontFamily;
+                        color: $textColor_header;
+                        border-radius: 15px;
+                        background-color: $themeColor;
+                        border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+                        font-weight: 400;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &:hover {
+                            opacity: .8;
+                            transition: .8s;
+                        }
+
+                    }
+                }
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+}

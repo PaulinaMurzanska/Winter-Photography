@@ -1,0 +1,217 @@
+.last {
+    padding: 40px 0;
+
+    .container {
+
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0 15px;
+
+
+
+
+            .left {
+                width: 50%;
+                display: block;
+                text-align: left;
+                color: $textColor_main;
+                font-family: $mainFontFamily;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+
+                @media(max-width:700px) {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                span {
+                    @include fluid-type(16px, 20px);
+                }
+
+                div {
+                    font-size: 12px;
+
+                    i {
+                        margin-left: 3px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                display: block;
+
+
+
+                @media(max-width:700px) {
+                    width: 100%;
+                    margin: 0 auto;
+
+                }
+
+                .menu-bottom {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    margin-bottom: 30px;
+
+                    @media(max-width:700px) {
+                        display: none;
+
+                    }
+
+
+                    li {
+                        margin: 0 8px;
+
+                        a {
+                            text-transform: uppercase;
+                            color: $textColor_main;
+                            @include fluid-type(10px, 14px);
+                            font-family: $mainFontFamily;
+                        }
+                    }
+                }
+
+                .subscribe {
+                    display: flex;
+                    justify-content: flex-end;
+                    min-width: 380px;
+                    padding-right: 15px;
+
+                    &:hover {
+                        opacity: .8;
+                        transition: .8s;
+                    }
+
+
+                    @media(max-width:700px) {
+                        justify-content: center;
+                        width: 100%;
+
+                    }
+
+
+                    .input-email {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        border: 1px solid $formBorderColor;
+                        border-radius: 2px;
+                        border-right: hidden;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+
+                        .lbl {
+
+                            margin: 0;
+                            padding: 10px 10px;
+                            background-color: $formBackgroundColor;
+                            color: #555555;
+                            border-radius: 2px;
+                            border-bottom-right-radius: 0;
+                            border-top-right-radius: 0;
+                            border-right: 1px solid $formBorderColor;
+                        }
+
+
+                        .wrapper {
+
+                            margin: 0;
+                            background-color: #ffffff;
+                            outline: none;
+                        }
+
+                        .mail {
+                            display: inline;
+                            outline: none;
+                            padding: 7px 5px 5px 10px;
+                            font-size: 14px;
+                            border: hidden;
+                            color: $formBorderColor;
+                            opacity: .7;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .btn {
+                            display: inline;
+                            outline: none;
+
+                            button {
+                                background-color: $themeColor;
+                                color: $textColor_header;
+                                font-size: 14px;
+                                padding: 10px;
+                                text-transform: uppercase;
+                                border-radius: 2px;
+                                outline: none;
+                                border: none;
+                                border-top-right-radius: 15px;
+                                border-bottom-right-radius: 15px;
+                                border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+
+
+
+
+
+
+
+                    }
+                }
+
+                .socials {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-top: 20px;
+
+
+                    .icon {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid $themeColor;
+                        padding-top: 10px;
+                        margin-right: 10px;
+                        background-color: $themeColor;
+
+                        a {
+                            font-size: 14px;
+                            color: $textColor_header;
+                        }
+
+                        &:hover {
+                            opacity: .8;
+                            transition: .5s;
+                        }
+                    }
+
+
+                    @media(max-width:700px) {
+                        justify-content: center;
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+}

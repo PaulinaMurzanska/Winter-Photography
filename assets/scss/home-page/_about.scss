@@ -1,0 +1,77 @@
+.about {
+    padding: 100px 0;
+    color: $textColor_main;
+
+    .container {
+        text-align: center;
+
+
+        h2 {
+            color: $textColor_main;
+            font-family: $mainFontFamily;
+            @include fluid-type (14px, 32px);
+            font-weight: normal;
+            margin: 0 auto 10px;
+            text-transform: uppercase;
+        }
+
+        .small {
+            max-width: 50px;
+            height: 1px;
+            border: 1px solid $themeColor;
+            background-color: $themeColor;
+            margin: 20px auto;
+            height: 0;
+            height: 0;
+
+
+        }
+
+        .about-main {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 35px;
+
+
+
+            .photo {
+                width: 50%;
+                overflow: hidden;
+                text-align: center;
+
+                @media(max-width:900px) {
+                    width: 100%;
+                }
+
+
+                img {
+                    max-height: 400px;
+                    max-width: 80%;
+                    margin-bottom: 30px;
+                    border-radius: 6px;
+                }
+            }
+
+            .info {
+                width: 50%;
+                text-align: left;
+                padding: 0 15px;
+                color: $textColor_main;
+                @include fluid-type(14px, 16px);
+                font-family: $mainFontFamily;
+                line-height: 1.5;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+
+                @media(max-width:900px) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    position: relative;
+
+    .go_top {
+        position: relative;
+
+
+
+        a {
+            width: 0px;
+            height: 0px;
+            position: fixed;
+            z-index: 15;
+            bottom: 20px;
+            right: 20px;
+            display: block;
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, .3);
+            scroll-behavior: smooth;
+
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 12px;
+                color: $textColor_header;
+            }
+
+        }
+
+
+
+
+    }
+
+    &.move {
+        .go_top a {
+            width: 30px;
+            height: 30px;
+            transition: .8s;
+            scroll-behavior: smooth;
+        }
+    }
+
+
+
+
+
+
+
+
+}

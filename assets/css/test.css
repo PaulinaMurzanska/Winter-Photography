@@ -1,0 +1,376 @@
+body {
+    background-color: #fff;
+    color: #686052;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: rgba(255, 209, 1, 1);
+    position: relative;
+
+}
+
+.container {
+    width: 70% height:auto;
+    margin: 0 auto;
+    padding: 30px 100px;
+
+}
+
+
+/*************************
+    NAV
+    **************************/
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    background-color: #eeeae4;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #686052;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 100px;
+    display: block;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/**********************
+    BASE-VIEW-SITE
+    *********************/
+
+.container main section.base-view-site {
+    width: 100% height:100%;
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 30px 70px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px 3px rgba(181, 167, 181, 1);
+}
+
+.container main section.base-view-site h2 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 1px;
+
+}
+
+
+.container main section.base-view-site .question-tab {
+    display: flex;
+    flex-wrap: no-wrap;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box:
+}
+
+.container main section.base-view-site .question-tab .question-num {
+    border: 2px solid #efeae4;
+    border-radius: 2px;
+    border-right: none;
+    width: 5%;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+
+
+}
+
+.container main section.base-view-site .question-tab .question-num p {
+    font-size: 14px;
+    margin: 0;
+
+    @media(max-width:1120px) {
+        font-size: .5em;
+    }
+}
+
+.container main section.base-view-site .question-tab .main-question {
+    border: 3px solid #eeeae4;
+    border-radius: 2px;
+    border-right: none;
+    width: 50%;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+
+
+}
+
+.container main section.base-view-site .question-tab .main-question h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+
+}
+
+
+
+
+.container main section.base-view-site .question-tab .see-more {
+    border: 3px solid #eeeae4;
+    border-radius: 2px;
+    border-right: none;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #eeeae4;
+
+}
+
+.container main section.base-view-site .question-tab .see-more:hover {
+    background-color: rgba(255, 209, 1, 1);
+    font-weight: 700;
+}
+
+
+
+.container main section.base-view-site .question-tab .see-more p {
+    line-height: 1;
+    margin: 0;
+
+}
+
+.container main section.base-view-site .question-tab .see-more p a {
+    text-decoration: none;
+    color: #686052;
+    font-size: 12px;
+
+}
+
+.container main section.base-view-site .question-tab .published {
+    border: 2px solid #efeae4;
+    border-radius: 2px;
+    color: #686052;
+    width: 25%;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.container main section.base-view-site .question-tab .published small {
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+/***********************
+    DETAIL
+    **********************/
+
+
+
+.details form .choice-wrapper {
+    border: 2px solid #eeeae4;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: #eeeee4;
+    padding: 5px;
+    box-shadow: 0px 0px 3px 1px rgba(181, 167, 181, 1);
+
+}
+
+.details form .choice-wrapper:hover {
+    box-shadow: 0px 0px 3px 3px rgba(181, 167, 181, 1);
+    transition: .3s;
+    font-weight: 700;
+
+}
+
+
+
+.details form .choice-wrapper label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.details form .choice-wrapper label span {
+    font-size: 14px;
+}
+
+
+
+
+input[type='radio'] {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+
+}
+
+input[type='radio']:hover:after {
+    background-color: rgba(255, 209, 1, 1);
+
+}
+
+
+input[type='radio']:checked:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgba(255, 209, 1, 1);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #e0aa34;
+
+}
+
+input[type='radio']:checked+span {
+    font-weight: 700;
+}
+
+
+input[type='submit'] {
+    width: 60%;
+    margin: 30px auto;
+    display: block;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 209, 1, 1);
+    color: #686052;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+input[type='submit']:hover {
+    color: #fff;
+    background-color: #686052;
+    transition: .5s;
+}
+
+input[type='submit']:focus {
+    outline: none;
+
+}
+
+.details span {
+    font-size: 10px;
+}
+
+.details span small {
+    margin-left: 5px;
+    font-size: 8px;
+}
+
+/**********************
+    RESULTS
+    ***********************/
+.results table {
+    width: 100%;
+    margin: 0 auto 30px;
+    box-shadow: 0px 0px 3px 1px rgba(181, 167, 181, 1);
+    box-sizing: border-box;
+    border-spacing: 1px;
+
+
+}
+
+.results thead th {
+    width: 100%;
+
+}
+
+.results tbody {
+    width: 100%;
+}
+
+
+.results td,
+th {
+    padding: 10px;
+    background-color: #eeeae4;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+
+}
+
+.results span {
+    font-size: 10px;
+}
+
+.results span small {
+    margin-left: 5px;
+    font-size: 8px;
+}
+
+
+/*****************
+    FOOTER
+    *************/
+
+footer {
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
